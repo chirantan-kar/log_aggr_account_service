@@ -18,4 +18,4 @@ ADD ./settings.gradle    settings.gradle
 RUN gradle clean build
 
 EXPOSE 9091
-CMD ["java", "-jar", "build/libs/log-aggr-account-0.0.1-SNAPSHOT.jar","--spring.config.location=/etc/properties/application.properties"]
+CMD ["java", "-jar", "build/libs/account-service-0.0.1-SNAPSHOT.jar","--spring.config.location=/etc/properties/application.properties"]
